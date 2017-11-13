@@ -1,0 +1,17 @@
+--- # webserver setup
+- hosts: webserver
+  remote_user: test5000
+  become: yes
+  tasks:
+    - name: installing httpd package
+      command: yum install -y httpd
+      args:
+          creates: /etc/httpd/conf/httpd.conf
+    - name: copy index.html
+      shell: echo "checking" > /var/www/html/index.html
+    - name: start httpd service
+      raw: service httpd start
+    - name: execute shell script
+      script: ./hello.sh
+
+

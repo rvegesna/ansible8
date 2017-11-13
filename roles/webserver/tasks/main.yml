@@ -1,0 +1,9 @@
+---
+# tasks file for webserver
+- name: install httpd
+  yum: name=httpd state=installed
+- name: copy index.html
+  copy: src=index.html dest=/var/www/html
+  notify: restart httpd service
+- name: start httpd service
+  service: name=httpd state=started

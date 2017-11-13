@@ -1,0 +1,11 @@
+---
+# defaults file for mysql
+mysql_user: mysql
+mysql_port: 3306
+mysql_datadir: /var/lib/mysql
+mysql_bind: 0.0.0.0
+mysql_pkg: mysql-server
+mysql_pid: /var/run/mysqld/mysqld.pid
+mysql_socket: /var/lib/mysql/mysql.sock
+mysql_cnfpath: /etc/my.cnf
+mysql_service: mysqld

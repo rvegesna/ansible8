@@ -1,0 +1,9 @@
+--- # webserver setup
+- hosts: webserver
+  remote_user: test5000
+  become: yes
+  tasks:
+      - include: install.yml
+      - include: copy.yml
+      - include: service.yml
+

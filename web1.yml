@@ -1,0 +1,7 @@
+--- # webserver setup
+- hosts: webserver
+  remote_user: test5000
+  become: yes
+  roles:
+       - webserver
+       - MichaelRigart.git

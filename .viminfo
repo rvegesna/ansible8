@@ -27,39 +27,40 @@
 	      yum: name=httpd state=installed
 	      when: ansible_os_family" == "RedHat"
 ""1	LINE	0
-	
+	>>>>>>> 157adb71ed0f0887f735b733b3252bb3d533752d
 "2	LINE	0
-	
+	asldk;asdka;lsdkasd;ld
 "3	LINE	0
-	      - include: service.yml
+	checking git hub
 "4	LINE	0
-	      - include: copy.yml
+	=======
 "5	LINE	0
-	      - include: install.yml
+	<<<<<<< HEAD
 "6	LINE	0
-	  tasks:
+	
 "7	LINE	0
-	      service: name={{pkg}} state=started
+	
 "8	LINE	0
-	    - name: start httpd service
+	      - include: service.yml
 "9	LINE	0
-	      copy: src=index.html dest=/var/www/html/index.html
+	      - include: copy.yml
 "-	CHAR	0
 	'
 
 # File marks:
-'0  7  7  ~/web1.yml
-'1  6  17  ~/web1.yml
-'2  1  31  ~/roles/webserver/files/index.html
-'3  7  30  ~/roles/webserver/tasks/main.yml
-'4  2  0  ~/roles/webserver/tasks/main.yml
-'5  8  27  ~/include.yml
-'6  3  34  ~/service.yml
-'7  3  40  ~/copy.yml
-'8  3  32  ~/install.yml
-'9  17  11  ~/webserver4.yml
+'0  1  0  ~/file1
+'1  7  7  ~/web1.yml
+'2  6  17  ~/web1.yml
+'3  1  31  ~/roles/webserver/files/index.html
+'4  7  30  ~/roles/webserver/tasks/main.yml
+'5  2  0  ~/roles/webserver/tasks/main.yml
+'6  8  27  ~/include.yml
+'7  3  34  ~/service.yml
+'8  3  40  ~/copy.yml
+'9  3  32  ~/install.yml
 
 # Jumplist (newest first):
+-'  1  0  ~/file1
 -'  7  7  ~/web1.yml
 -'  6  7  ~/web1.yml
 -'  1  0  ~/web1.yml
@@ -111,55 +112,14 @@
 -'  13  6  ~/webserver.yml
 -'  15  0  ~/webserver.yml
 -'  1  0  ~/webserver.yml
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
--'  1  8  ~/file1
 
 # History of marks within files (newest to oldest):
+
+> ~/file1
+	"	1	0
+	.	2	0
+	+	1	0
+	+	2	0
 
 > ~/web1.yml
 	"	7	7
@@ -321,9 +281,3 @@
 	^	2	10
 	.	2	9
 	+	2	9
-
-> ~/file1
-	"	1	8
-	^	1	9
-	.	1	8
-	+	1	8
